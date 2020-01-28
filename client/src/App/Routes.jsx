@@ -6,7 +6,7 @@ import Project from 'Project';
 import Authenticate from 'Auth/Authenticate';
 import PageError from 'shared/components/PageError';
 
-const Routes = () => (
+export default const Routes = () => (
   <Router history={history}>
     <Switch>
       <Redirect exact from="/" to="/project" />
@@ -16,5 +16,3 @@ const Routes = () => (
     </Switch>
   </Router>
 );
-
-export default Routes;
